@@ -1,0 +1,125 @@
+\documentclass[usenatbib]{tjaa}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{lipsum}
+
+\newsavebox\verbbox
+
+\title[Short Title max 45 chars]{Leverage data fusion from s1-s2 to enable\newline  
+fast and accurate land cover classification}
+
+% NOTES (authors):
+% 1) For single author don't number single affiliation addreess.
+% 2) If you need two or more lines of authors, use \newauthor (see below usage)
+% 3) ORCID is required for ALL authors
+% 4) Short author should be either A.U. Thor et.al -or- A. U. Thor
+% 5) Depending on the language \others will be either "et al." or "v.ark."
+\author[F. Author \others]{%
+Crampe Marc\autid{1}{0000-0000-0000-0000}\thanks{crampemarc@gmail.com},
+Picard Emilio\autid{2}{0000-0000-0000-0000}\thanks{emilio.picard@free.fr},
+\\
+% NOTES (List of institutions):
+% 1) Don't put \\ at the last institution
+\adrid{1}IPSA, Department of Engeneering, 75000, France\\
+\adrid{2}ENS Paris Saclay, Department of Mathematics, 91000, France\\
+}%%%%TJAA-OZEL:AUTHOR%
+% These dates and numbers will be filled out by the publisher
+\date{Accepted: XXX. Revised: YYY. Received: ZZZ.}
+%
+\renewcommand{\pubyear}{0000}
+\renewcommand{\volume}{0}
+\renewcommand{\issue}{0}
+
+% NOTES (language):
+% 1) Default language of TJAA is ENGLISH.
+% 2a) If your manuscript is in ENGLISH then leave both commands as commented
+%\ENlang
+% 2b) If your manuscript is in TURKISH then uncomment only below command
+%\TRlang
+
+\begin{document}
+% Don't change these 3 lines
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle{M00-0000}
+
+\begin{abstract}
+  Urban areas face unique challenges in monitoring and managing land cover changes,
+  particularly due to cloud cover that a9ects optical imagery. This study presents an innovative
+  approach to urban land cover classification by fusing \texttt{Sentinel-1} Synthetic Aperture Radar ($SAR$)
+  data with \texttt{Sentinel-2} optical data. We aim to develop an automated algorithm capable of
+  providing monthly monitoring of urban land cover changes, enhancing classification accuracy
+  and o9ering critical insights into urban growth and environmental resilience.
+  \\
+  Utilizing a combination of $4$ images from \texttt{Sentinel-1} (VV, VH, VV/VH) and $5$ key spectral indices
+  derived from \texttt{Sentinel-2} (NDVI, SAVI, BAI, NDWI, and alternative BAI), we created a
+  comprehensive merged dataset of $20$ bands. This dataset serves as the foundation for our
+  classification models, including Support Vector Machines (SVM), K-Nearest Neighbors (KNN),
+  Random Forest (RF), and Neural Networks (NN), which are evaluated for their performance in
+  accurately classifying various urban features.
+  \\
+  Additionally, we explore Convolutional Neural Networks (CNN) and the \texttt{SAM2} model for
+  advanced classification techniques. Our results demonstrate the potential of SAR and optical
+  data fusion to overcome the limitations of cloud cover, providing a robust framework for
+  automated urban land cover monitoring. This research contributes to a better understanding of
+  urban dynamics and supports e9ective environmental management strategies. \cite{einstein1905}
+\end{abstract}
+
+\begin{keywords}
+data fusion -- machine learning -- geospatial
+\end{keywords}
+
+\section{Introduction}
+
+\noindent
+In recent years, approximately 90\% of the world's mapping data has been generated,
+underscoring the critical importance of leveraging state-of-the-art technologies to create
+accurate maps that reflect the real challenges facing our planet today. The rapid pace of
+urbanization has transformed cities, leading to an urgent need for precise tools that can
+monitor land cover evolution. By comprehensively understanding these changes, we can
+identify detrimental impacts on the environment while also highlighting effective remediation
+efforts, ultimately contributing to the development of greener, more sustainable urban
+landscapes.
+\\
+\\
+However, the utility of optical imagery, particularly from satellites like Sentinel-2, is often
+compromised by cloud coverage, especially in tropical and coastal regions. This phenomenon
+results in significant data gaps, which can severely limit the effectiveness of urban monitoring
+tools. For instance, in Rouen, France, persistent cloud cover restricts the availability of usable
+optical images to only ten per year, presenting a substantial challenge for consistent urban
+analysis.
+\\
+\\
+To address these limitations, this study focuses on the exploitation of classification models on
+fused Sentinel-1 Synthetic Aperture Radar (SAR) and Sentinel-2 optical data. By employing
+data fusion techniques to mitigate the impacts of cloud coverage, we aim to enable more
+reliable monthly monitoring of urban land cover changes. The primary objective of this
+research is to evaluate and compare various machine learning and deep learning models—
+including Random Forest, Support Vector Machines (SVM), and Convolutional Neural
+Networks (CNNs)—to identify the most effective methodologies for achieving accurate and
+robust land cover classification in urban environments.
+
+\subsection{Why Rouen?}
+\noindent
+Rouen, a historic city in northern France, presents a diverse urban landscape with a mixture of
+commercial, residential, and industrial zones, as well as surrounding vegetation and water
+bodies (the Seine River). Its coastal proximity also makes it a relevant choice for studying urban
+resilience and environmental dynamics, as it faces potential impacts from coastal erosion and
+urban expansion.
+
+\subsection{Urban Dynamics and Environmental Challenges}
+\begin{itemize}
+  \item Population: Approximately $111,000$ inhabitants in the city center, with a wider metropolitan
+  area exceeding $500,000$ residents.
+  \item Urban Challenges: Urban growth, environmental remediation e9orts, and flood management
+  due to its proximity to the river and low-lying coastal areas.
+  \item Environmental Focus: Monitoring urban development, green spaces, and remediation
+  strategies aimed at reducing the environmental footprint of urban sprawl. 
+\end{itemize}
+
+\bibliographystyle{tjaa.bst}
+\bibliography{references.bib}
+
+\label{lastpage}
+\end{document}
