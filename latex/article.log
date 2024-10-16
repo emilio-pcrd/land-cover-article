@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.6.7)  14 OCT 2024 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.6.7)  16 OCT 2024 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,43 +649,64 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 71.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 113.
+<./figures/diagramme_sec1.pdf, id=13, 384.43625pt x 517.935pt>
+File: ./figures/diagramme_sec1.pdf Graphic file (type pdf)
+<use ./figures/diagramme_sec1.pdf>
+Package pdftex.def Info: ./figures/diagramme_sec1.pdf  used on input line 104.
+(pdftex.def)             Requested size: 144.00146pt x 194.01175pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 119.
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 119.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 111.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 122.
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 126.
  (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (./article.bbl) 
-AED: lastpage setting LastPage
+]
+<./figures/merged_images_sec2.pdf, id=47, 501.875pt x 474.77374pt>
+File: ./figures/merged_images_sec2.pdf Graphic file (type pdf)
+<use ./figures/merged_images_sec2.pdf>
+Package pdftex.def Info: ./figures/merged_images_sec2.pdf  used on input line 178.
+(pdftex.def)             Requested size: 144.00146pt x 136.22472pt.
+<./figures/Image_index.pdf, id=48, 750.805pt x 539.01375pt>
+File: ./figures/Image_index.pdf Graphic file (type pdf)
+<use ./figures/Image_index.pdf>
+Package pdftex.def Info: ./figures/Image_index.pdf  used on input line 184.
+(pdftex.def)             Requested size: 215.99854pt x 155.06805pt.
+
+Overfull \hbox (286.4722pt too wide) detected at line 194
+\OML/lmm/m/it/9 VV[]; VV[]; VV[]; VV[]; VH[]; VH[]; VH[]; VH[]; VV=VH[]; VV=VH[]; VV=VH[]; VV=VH[]; NDVI; SAVI; BAI; NDWI; B\OT1/lmr/m/n/9 2\OML/lmm/m/it/9 ; B\OT1/lmr/m/n/9 3\OML/lmm/m/it/9 ; B\OT1/lmr/m/n/9 4\OML/lmm/m/it/9 ; B\OT1/lmr/m/n/9 8
+ []
+
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 125.
-[2
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 198.
+[2 <./figures/diagramme_sec1.pdf> <./figures/merged_images_sec2.pdf> <./figures/Image_index.pdf>] (./article.bbl) 
+AED: lastpage setting LastPage
+[3
 
 ] (./article.aux)
 Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22308 strings out of 480247
- 411844 string characters out of 5896107
- 791044 words of memory out of 5000000
- 39826 multiletter control sequences out of 15000+600000
- 543946 words of font info for 78 fonts, out of 8000000 for 9000
+ 22343 strings out of 480247
+ 412706 string characters out of 5896107
+ 791240 words of memory out of 5000000
+ 39850 multiletter control sequences out of 15000+600000
+ 544323 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,17n,94p,431b,856s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagr.pfb>
-Output written on article.pdf (2 pages, 314613 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagr.pfb>
+Output written on article.pdf (3 pages, 2633475 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

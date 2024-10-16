@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{lipsum}
-
+ 
 \newsavebox\verbbox
 
 \title[Short Title max 45 chars]{Leverage data fusion from s1-s2 to enable\newline  
@@ -64,7 +64,7 @@ Picard Emilio\autid{2}{0000-0000-0000-0000}\thanks{emilio.picard@free.fr},
   data fusion to overcome the limitations of cloud cover, providing a robust framework for
   automated urban land cover monitoring. This research contributes to a better understanding of
   urban dynamics and supports e9ective environmental management strategies. \cite{einstein1905}
-\end{abstract}
+\end{abstract} 
 
 \begin{keywords}
 data fusion -- machine learning -- geospatial
@@ -99,8 +99,17 @@ research is to evaluate and compare various machine learning and deep learning m
 including Random Forest, Support Vector Machines (SVM), and Convolutional Neural
 Networks (CNNs)—to identify the most effective methodologies for achieving accurate and
 robust land cover classification in urban environments.
-
-\subsection{Why Rouen?}
+\begin{figure}
+  \centering
+  \includegraphics[width=.6\linewidth]{./figures/diagramme_sec1.pdf}
+  \caption{Diagram of algorithm implementaion}
+  \label{diagram-s1}
+\end{figure}
+\\
+\\
+Diagram \ref{diagram-s1} show the pipeline of our implementation for testing our method and
+compare to the \textit{naive} ones.
+\subsection*{Why Rouen?}
 \noindent
 Rouen, a historic city in northern France, presents a diverse urban landscape with a mixture of
 commercial, residential, and industrial zones, as well as surrounding vegetation and water
@@ -108,7 +117,7 @@ bodies (the Seine River). Its coastal proximity also makes it a relevant choice 
 resilience and environmental dynamics, as it faces potential impacts from coastal erosion and
 urban expansion.
 
-\subsection{Urban Dynamics and Environmental Challenges}
+\subsection*{Urban Dynamics and Environmental Challenges}
 \begin{itemize}
   \item Population: Approximately $111,000$ inhabitants in the city center, with a wider metropolitan
   area exceeding $500,000$ residents.
@@ -117,6 +126,94 @@ urban expansion.
   \item Environmental Focus: Monitoring urban development, green spaces, and remediation
   strategies aimed at reducing the environmental footprint of urban sprawl. 
 \end{itemize}
+
+\subsection*{Application of Data Fusion and Models}
+\noindent
+For this study, we applied the Sentinel-1 and Sentinel-2 data fusion approach to analyze the land
+cover changes in Rouen. The various machine learning models (SVM, KNN, RF, NN, CNN, and
+SAM2) were trained and tested on this region, allowing us to evaluate the accuracy and
+robustness of each approach in distinguishing between urban features.
+\\
+\\
+\noindent
+We utilize data from both \textbf{Sentinel-1} (SAR) and \textbf{Sentinel-2} (optical) to overcome challenges like
+cloud cover in urban land cover classification. \\
+Sentinel-1 provides radar data (VV, VH, and VV/VH ratio) that is resistant to cloud cover, allowing
+consistent monitoring of urban structures and vegetation. \\
+Sentinel-2 supplies optical data, from which we calculate 4 key spectral indices specifically
+designed to distinguish urban features:
+\begin{itemize}
+  \item \textbf{NDVI} (Normalized Difference Vegetation Index): highlights vegetation health
+  \item \textbf{SAVI} (Soil Adjusted Vegetation Index): Adjusts for soil inﬂuence in areas with sparse vegetation
+  \item \textbf{BAI} (Burned Area Index): Detects bare soil and sparse vegetation
+  \item \textbf{NDWI} (Normalized Di9erence Water Index): Identiﬁes water bodies and moisture
+\end{itemize}
+The use of these indices allows us to highlight speciﬁc features that are not visible to the naked
+eye by combining di9erent spectral bands to extract precise information. For example, the NDVI,
+which uses the red and near-infrared bands, detects vegetation health by distinguishing areas
+with dense vegetation cover from those where vegetation is in decline. Similarly, the SAVI, a
+modiﬁed version of NDVI that accounts for exposed soil, is crucial in environments with sparse
+vegetation. The BAI, using blue and near-infrared bands, detects areas with bare soil or minimal
+vegetation, often associated with phenomena like ﬁres or erosion. Lastly, the NDWI, which
+combines the green and near-infrared bands, identiﬁes water bodies or moisture presence,
+providing key information for assessing hydrology and ﬂood risks.\\
+\\
+\noindent
+When combined with Sentinel-1 radar data, which is resistant to cloud cover, these indices
+enable more accurate and detailed analysis of urban land cover changes. This fusion of data
+enhances our ability to monitor and predict environmental transformations in cities, improving
+decision-making for urban planning and disaster mitigation.
+\\
+\\
+\noindent
+The ﬁnal merged image consists of 20 bands:
+\begin{itemize}
+  \item Sentinel-1: 4 images × 3 bands (VV, VH, VV/VH)
+  \item Sentinel-2: The 5 special indices plus the original B2, B3, B4, B8 bands 
+\end{itemize}
+All those different bands can be seen in figure \ref{20-bands}. Figure \ref{S1-S2-bands}
+show the multispectral data visualization of S1 and S2. 
+\begin{figure}
+  \centering
+  \includegraphics[width=.6\linewidth]{./figures/merged_images_sec2.pdf}
+  \caption{Final merged image with the 20 different selected bands.}
+  \label{20-bands}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\linewidth]{./figures/Image_index.pdf}
+  \caption{Multispectral Data Visualization of Sentinel-1 and Sentinel-2.}
+  \label{S1-S2-bands}
+\end{figure}
+\\
+\\
+The ﬁnal merged image consists of 20 bands, formulated as follows:
+\\
+\\
+\textbf{Merged Image} = \[VV_1, VV_2, VV_3, VV_4, VH_1, VH_2, VH_3, VH_4, VV/VH_1, VV/VH_2,
+VV/VH_3, VV/VH_4, NDVI, SAVI, BAI, NDWI, B2, B3, B4, B8\].
+\\
+This fusion allows us to capture both structural and spectral information, enhancing the
+precision of our urban land cover classiﬁcation.
+
+\section{Pixel-Based Classification}
+Land cover classiﬁcation involves categorizing areas of land into distinct classes based on
+observed features. This process is crucial for understanding environmental conditions,
+managing natural resources, and monitoring changes in land use. In this study, we focus
+on pixel-based classiﬁers, which analyze each pixel in satellite imagery independently to
+determine its class based on spectral signatures.
+\\
+\\
+We evaluated several pixel-based classiﬁcation models, including Random Forest, K-Nearest
+Neighbors (KNN), Support Vector Machine (SVM), and Decision Tree classiﬁers. These
+models utilize the spectral information from merged Sentinel-1 and Sentinel-2 data to classify
+pixels into categories such as vegetation, water, urban areas, forest, and crops.
+\\
+\\
+To determine the e9ectiveness of each classiﬁer, we computed confusion matrices and overall
+accuracy metrics.
+
+
 
 \bibliographystyle{tjaa.bst}
 \bibliography{references.bib}

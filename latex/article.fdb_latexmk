@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex article"] 1728906601 "article.aux" "article.bbl" "article" 1728906601
-  "article.aux" 1728906601 1381 80d91f1e7a6facf9510d4e7e7be2a281 "pdflatex"
+["bibtex article"] 1729079712 "article.aux" "article.bbl" "article" 1729079713
+  "article.aux" 1729079713 2128 085c10026301fb8c8b6ac7d14945d5b1 "pdflatex"
   "references.bib" 1728906574 211 07a680353188465188f1ade8adf45105 ""
   "tjaa.bst.bst" 0 -1 0 ""
   (generated)
   "article.bbl"
   "article.blg"
-["pdflatex"] 1728906601 "/home/emiliopicard/work/gee-article/latex/article.tex" "article.pdf" "article" 1728906601
+["pdflatex"] 1729079712 "/home/emiliopicard/work/gee-article/latex/article.tex" "article.pdf" "article" 1729079713
   "/etc/texmf/web2c/texmf.cnf" 1718109403 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/emiliopicard/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1717765355 1405755 d67d491c036c557a172a9b8ad63b2f6e ""
-  "/home/emiliopicard/work/gee-article/latex/article.tex" 1728906600 6160 70efa390a27876610062e03a2ee64f68 ""
+  "/home/emiliopicard/work/gee-article/latex/article.tex" 1729079710 11043 806f03792157b8bdbac402be0b7b1988 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm" 1246382020 1496 c79f6914c6d39ffb3759967363d1be79 ""
@@ -183,12 +183,14 @@
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr8.tfm" 1254938640 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr9.tfm" 1254938640 11884 c93929a6974dce79eabb778f219d7e18 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ts1-lmss8.tfm" 1254938640 1604 48051ef252c0ddf583dd76f1a193d4ae ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ts1-lmss9.tfm" 1254938640 1604 83d0fca6162270f4baaaed5c8d49be12 ""
   "/usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qagr.tfm" 1529098226 11064 e55eb58ac954bdb5f228d2985e9addf9 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb" 1254938640 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb" 1254938640 30696 2654571912f9cd384da9f7cb8a60c568 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb" 1254938640 30635 833ec815d446ec453a4913fc26d24cbc ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb" 1254938640 30698 e53a423459271d6c5cdd91f7559396af ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr10.pfb" 1254938640 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
+  "/usr/share/texmf/fonts/type1/public/lm/lmr6.pfb" 1254938640 123394 d390152bb30feeb496aaaa93299ee9ba ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr8.pfb" 1254938640 122174 a7a08406857c9530a0320a2517f60370 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr9.pfb" 1254938640 121065 50bbfa703ce7e11638752ef5a6d120c7 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmss10.pfb" 1254938640 97408 f595704ec2a07246c2d6f7b602587452 ""
@@ -214,10 +216,13 @@
   "/usr/share/texmf/tex/latex/tex-gyre/t1qag.fd" 1480098840 1642 7286e0350ef6ff0a6f0254f8254a3851 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1718109407 4379155 98693266ff65f58d9f98aff394de12d2 ""
-  "article.aux" 1728906601 1381 80d91f1e7a6facf9510d4e7e7be2a281 "pdflatex"
-  "article.bbl" 1728906601 1124 424343099339ea9010c4c52f115bc378 "bibtex article"
-  "article.out" 1728906601 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "article.tex" 1728906600 6160 70efa390a27876610062e03a2ee64f68 ""
+  "article.aux" 1729079713 2128 085c10026301fb8c8b6ac7d14945d5b1 "pdflatex"
+  "article.bbl" 1729079712 1124 424343099339ea9010c4c52f115bc378 "bibtex article"
+  "article.out" 1729079712 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "article.tex" 1729079710 11043 806f03792157b8bdbac402be0b7b1988 ""
+  "figures/Image_index.pdf" 1729079057 1134064 689e0b380edcf09f8d98693e34d33f7f ""
+  "figures/diagramme_sec1.pdf" 1729078664 29203 07a31de46b6904a29eef83d2ea5ff0bc ""
+  "figures/merged_images_sec2.pdf" 1729078669 1125981 90308e7a4965b9642ffd7b8235082368 ""
   "tjaa.cls" 1728906263 73820 8ed4ed2e93795de96a13a56a7a653f3b ""
   (generated)
   "article.aux"
